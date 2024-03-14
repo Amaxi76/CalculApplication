@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dip"
+    tools:context=".MainActivity"
+    android:background="@color/coolheur">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="20dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="182dp"
+            android:layout_height="300dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/operation"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+
+            android:hint="@string/default_answer"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="verifierOperation"
+            android:text="@string/submit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/quitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onDestroy"
+            android:text="@string/quitter"
+            android:background="@color/vert"
+            android:padding="10dip"/>
+
+        <Button
+            android:id="@+id/nouvelleMultiplication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="genererCalcul"
+            android:text="@string/nouvelleMultiplication"
+            android:background="@color/vert"
+            android:padding="10dip" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

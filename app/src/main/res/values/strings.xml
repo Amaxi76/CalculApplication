@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mineplication</string>
+    <string name="hello_world">Quoicooubeh</string>
+    <string name="action_setting">Parametres</string>
+    <string name="default_answer">Votre reponse</string>
+    <string name="operation">calcul</string>
+    <string name="submit">Valider</string>
+    <string name="quitter">Quitter</string>
+    <string name="nouvelleMultiplication">Nouvelle mineplication</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="addition">Addition</string>
+</resources>
